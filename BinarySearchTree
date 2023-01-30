@@ -1,10 +1,13 @@
 [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
 
-7 Rakamini Root Node olarak alıyoruz. Bu yüzden en başa onu yazdık. Ardından ikinci rakama geçiyoruz. İkinci rakam, ilk rakam olan 7 den küçük olduğu için sol tarafına yazıyoruz.
+7 Rakamini Root Node olarak alıyoruz.
+Bu yüzden en başa onu yazdık. Ardından ikinci rakama geçiyoruz. 
+İkinci rakam, ilk rakam olan 7 den küçük olduğu için sol tarafına yazıyoruz.
                        7
                       /
                      5
-3.rakamımız 1. Root Node ile karşılaştığında 7 den küçük olduğu için yine sol tarafa yazılacak. Sol tarafta 5 değeri de var. 1, 5 ten küçük olduğu için 5inde sol tarafına yerleşecek.
+3.rakamımız 1. Root Node ile karşılaştığında 7 den küçük olduğu için yine sol tarafa yazılacak.
+Sol tarafta 5 değeri de var. 1, 5 ten küçük olduğu için 5inde sol tarafına yerleşecek.
                        7
                       /
                      5
