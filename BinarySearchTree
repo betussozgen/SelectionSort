@@ -25,7 +25,9 @@ Sol tarafta 5 değeri de var. 1, 5 ten küçük olduğu için 5inde sol tarafın
                     /
                    1
 
-5.rakamımız 3. Root Node ile karşılaştırdığımızda 7 den küçük olduğu için sol tarafta yer alacak.Sol taraftan devam ettiğimizde 5 yer alıyor. 3, 5ten küçük olduğu için yine sol taraftan yer almalı. Bir alt seviyeye indiğimizde 1 ile karşılaşıyor. 3, 1 den büyük olduğu için sağ tarafında yer almalı.
+5.rakamımız 3. Root Node ile karşılaştırdığımızda 7 den küçük olduğu için sol tarafta yer alacak.
+Sol taraftan devam ettiğimizde 5 yer alıyor. 3, 5ten küçük olduğu için yine sol taraftan yer almalı.
+ Bir alt seviyeye indiğimizde 1 ile karşılaşıyor. 3, 1 den büyük olduğu için sağ tarafında yer almalı.
 
                       7
                       /  \
@@ -45,7 +47,7 @@ Sol tarafta devam ettiğimizde 5 yer alıyor. 6, 5 ten büyük olduğu için sa�
                    1   6
                     \
                      3
-                     
+
 7.rakamımız 0. Root Node ile karşılaştırdığımızda 7 den küçük olduğu için sol tarafta yer almalı. 
 Sol tarafta ilk olarak 5 ile karşılaşıyor ve 0, 5 ten küçük tekrardan sol taraftan ilerlemeli.
 1 ile karşılaşıyor. 0, 1 den küçük olduğu için sol tarafına yerleşmeli.
