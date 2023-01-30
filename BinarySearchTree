@@ -1,11 +1,81 @@
 [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
 
-                     7
-                 /       \
-               5           8
-             /  \            \
-            1    6            9
-          /   \
-          0     3
-           \      \
-            2     4
+7 Rakamini Root Node olarak alıyoruz. Bu yüzden en başa onu yazdık. Ardından ikinci rakama geçiyoruz. İkinci rakam, ilk rakam olan 7 den küçük olduğu için sol tarafına yazıyoruz.
+                       7
+                      /
+                     5
+3.rakamımız 1. Root Node ile karşılaştığında 7 den küçük olduğu için yine sol tarafa yazılacak. Sol tarafta 5 değeri de var. 1, 5 ten küçük olduğu için 5inde sol tarafına yerleşecek.
+                       7
+                      /
+                     5
+                    /
+                   1
+4.rakamımız 8. Root Node ile karşılaştırdığımızda 7 den büyük olduğu için sağ tarafa yazıyoruz.
+                       7
+                      /  \
+                     5    8
+                    /
+                   1
+5.rakamımız 3. Root Node ile karşılaştırdığımızda 7 den küçük olduğu için sol tarafta yer alacak.Sol taraftan devam ettiğimizde 5 yer alıyor. 3, 5ten küçük olduğu için yine sol taraftan yer almalı. Bir alt seviyeye indiğimizde 1 ile karşılaşıyor. 3, 1 den büyük olduğu için sağ tarafında yer almalı.
+                      7
+                      /  \
+                     5    8
+                    /
+                   1
+                    \
+                     3
+6.rakamımız 6. Root Node ile karşılaştırınca 7 den küçük ve sol tarafta yer almalı. Sol tarafta devam ettiğimizde 5 yer alıyor. 6, 5 ten büyük olduğu için sağında yer almalı.
+                       7
+                      /  \
+                     5    8
+                    / \
+                   1   6
+                    \
+                     3
+7.rakamımız 0. Root Node ile karşılaştırdığımızda 7 den küçük olduğu için sol tarafta yer almalı. Sol tarafta ilk olarak 5 ile karşılaşıyor ve 0, 5 ten küçük tekrardan sol taraftan ilerlemeli. 1 ile karşılaşıyor. 0, 1 den küçük olduğu için sol tarafına yerleşmeli.
+                       7
+                      /  \
+                     5    8
+                    / \
+                   1   6
+                  / \
+                 0   3
+
+8.rakamımız 9. Root Node ile karşılaştırdığımızda 7 den büyük olduğu için sağ tarafta yer almalı. Sağ tarafta ilk 8 ile karşılaşıyor. 9, 8 den büyük olduğu için sağında yer almalı.             
+ 
+                       7
+                      /  \
+                     5    8
+                    / \    \
+                   1   6    9
+                  / \
+                 0   3
+
+9.rakamımız 4. Root Node ile karşılaştırdığımızda 7 den küçük olduğu için sol tarafta yer almalı.Sol tarafta ilk 5 ile karşılaşıyor. 4, 5 ten küçük tekrar soldan devam etmeli. Daha sonra 1 ile karşılaşıyor. 4, 1 den büyük sağ taraftan devam edecek. 3 ile karşılaşıyor. 4, 3 ten büyük olduğu için sağında yer almalı.
+
+                       7
+                      /  \
+                     5    8
+                    / \    \
+                   1   6    9
+                  / \
+                 0   3
+                      \
+                      4
+
+10.rakamımız 2. Root Node ile karşılaştırdığımızda 7 den küçük olduğu için sol tarafta yer almalı. Sol tartafta 5 ile karşılaşıyor. 2, 5 ten küçük soldn devam edecek. 1 ile karşılaşıyor. 2, 1 den büyük sağdan devam edecek. 3 ile karşılaşıyor. 2, 3 ten küçük olduğu için sol tarafına eklenecek.                     
+
+                        7
+                      /  \
+                     5    8
+                    / \    \
+                   1   6    9
+                  / \
+                 0   3
+                    / \
+                    2  4
+
+
+
+
+                  
