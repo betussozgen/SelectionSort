@@ -1,18 +1,5 @@
-Selection Sort Projesi
-Proje 1
-[22,27,16,2,18,6] -> Insertion Sort
+[Patika.dev](https://app.patika.dev/courses/veri-yapilari-ve-algoritmalar/binary-search-tree-proje) Veri Yapıları ve Algoritmalar Dersinin Projeleri:
 
-Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
-
-Big-O gösterimini yazınız.
-
-Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
-
-Average case: Aradığımız sayının ortada olması
-Worst case: Aradığımız sayının sonda olması
-Best case: Aradığımız sayının dizinin en başında olması.
-.
-
-
-
-[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız
+1.Proje: Selection Sort [SelectionSort](SelectionSort)  [SelectionSort](SelectionSort)
+2.Proje: Merge Sort [Merge Sort](MergeSort)
+3.Proje: Binary Search Tree [Binary Search Tree](BinarySearchTree)
