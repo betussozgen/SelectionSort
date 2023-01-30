@@ -1,0 +1,86 @@
+[22,27,16,2,18,6] 
+
+1.Adım:
+[[2],27,16,22,18,6]  ----- n
+Verilen örüntüde en küçük eleman: 2 
+En küçük elemanı bulduktan sonra en baştaki ile yer değişirdik.
+
+2.Adım:
+[[2,6],16,22,18,27] ------ n-1
+Oluşan örüntüde en küçük eleman: 6
+5. indexte bulunan sayı ile(6) 1.indexteki sayı (27) yer değişti.
+
+
+3.Adım:
+[[2,6,16],22,18,27] ------- n-2
+Oluşan yeni örüntüde en küçük elamanı bul: 16
+Herhangi bir değişim işlemi yapılmayacak. 
+
+
+4.Adım:
+[[2,6,16,18],22,27] ----- n-3
+Oluşan yeni örüntüde en küçük elamanı bul: 18
+4. indexte bulunan sayı ile(18) 3.indexteki sayı (22) yer değişti.
+
+5.Adım:
+[[2,6,16,18,22],27] ----- n-4
+Oluşan yeni örüntüde en küçük elamanı bul: 22
+Herhangi bir değişim işlemi yapılmayacak. 
+
+6.Adım:
+[2,6,16,18,22,27] ------- n-5
+Geriye son 1 eleman kaldı bu da en büyük sayı ve en sonda yer alıyor. Örüntümüz sıralandı.
+
+
+
+Kısaca:
+[[2],27,16,22,18,6]  ----- n
+[[2,6],16,22,18,27] ------ n-1
+[[2,6,16],22,18,27] ------- n-2
+[[2,6,16,18],22,27] ----- n-3
+[[2,6,16,18,22],27] ----- n-4
+[2,6,16,18,22,27] ------- n-5
+
+
+--------------------BIGO-----------------------------
+o(n^2) : burada n tane değerim var. Sonraki aşamada n-1 . Daha sonraki aşamada ise n-2 bu en sonda 1 eleman kalana kadar devam ediyor.
+n + (n-1) + (n-2).... +1
+Yani 1 den n e kadar olan sayıların toplamını veriyor.
+Bunun formülü ise: (n*(n+1))/2. Buradan da ((n^2 + n)/2) . Big O notation da en büyük fonksiyonu alıyoruz, en büyük fonksiyon n^2 olduğu için bu algoritmanın bigO n^2 olur.
+--------------------------------------------------
+
+----------------TIME COMPLEXITY-------------------
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki caselerden hangisinin kapsamına girer? Yazınız
+
+Average case: Aradığımız sayının ortada olması
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+
+Cevap: Average case
+
+--------------------------ORNEK--------------------
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sorta göre ilk 4 adımını yazınız.
+
+Cevap:
+
+1.Adım:
+[[2],3,5,8,7,9,4,15,6] 
+En küçük sayı başa yazıldı.
+4. indexteki sayı(2) ile 1. indexteki sayı(7) yer değiştirildi.
+
+
+2.Adım:
+[[2,3],5,8,7,9,4,15,6] 
+En küçük sayı zaten 2. sırada olduğu için değişiklik yapılmadı.
+
+3.Adım:
+[[2,3,4],8,7,9,5,15,6] 
+En küçük sayı 4 ,
+Kalan örüntüde [5,8,7,9,4,15,6] 6. indexteki sayı ile(4) 2.indexteki sayı (5) yer değiştirildi.
+Değişen sayılar (5-4)
+
+4.Adım:
+[[2,3,4,5],7,9,8,15,6]
+En küçük sayı 5 , 
+Kalan örüntüde [8,7,9,5,15,6] 6. indexteki sayı ile(5) 3.indexteki sayı (8) yer değiştirildi.
+Değişen sayılar (8-5)
